@@ -8,6 +8,11 @@ const path = require("path");
 //update for heroku:
 const PORT = 3001;
 
+//middleware to handle data from client side to be parsed through json:
+app.use(express.json());
+//middleware to handle client data when using form on HTML:
+app.use(express.urlencoded({ extended: true }));
+
 //serve static files when requested from public dr
 app.use(express.static("public"));
 
@@ -21,6 +26,11 @@ app.get("/", (req, res) => {
 app.get("/notes", (req, res) => {
   //   res.send("hey");
   res.sendFile(path.join(__dirname, "/public/notes.html"));
+});
+
+//route for notes post
+app.post("/notes", (req, res) => {
+  res.send("hello");
 });
 
 // //?need a fallback route for this application??
