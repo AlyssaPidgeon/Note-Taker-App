@@ -19,7 +19,8 @@ app.get("/", (req, res) => {
 
 //route for get notes HTML file:
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join(_dirname, "notes.html"));
+  //   res.send("hey");
+  res.sendFile(path.join(__dirname, "/public/notes.html"));
 });
 
 // //?need a fallback route for this application??
