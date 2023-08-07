@@ -31,7 +31,21 @@ app.get("/notes", (req, res) => {
 
 //route for notes post
 app.post("/notes", (req, res) => {
-  res.send("hello");
+  //output message to web browser:
+  console.info(`${req.method} request received to add a new note`);
+  // Prepare a response object to send back to the client
+  let response;
+  // Check if there is anything in the response body
+  if (req.body && req.body.product) {
+    response = {
+      status: "success",
+      data: req.body,
+    };
+    res.status(201).json(response);
+  } else {
+    res.status(400).json("Request body must at least contain a product name");
+  }
+
   //log request -body to console
   console.log(res.body);
 });
