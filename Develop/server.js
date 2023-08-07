@@ -1,4 +1,5 @@
 //import Express.js
+// const { log } = require("console");
 const express = require("express");
 //initialize express.js
 const app = express();
@@ -31,6 +32,8 @@ app.get("/notes", (req, res) => {
 //route for notes post
 app.post("/notes", (req, res) => {
   res.send("hello");
+  //log request -body to console
+  console.log(res.body);
 });
 
 // //?need a fallback route for this application??
