@@ -1,5 +1,3 @@
-//import Express.js
-// const { log } = require("console");
 const express = require("express");
 //initialize express.js
 const app = express();
@@ -20,13 +18,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(apiRoutes);
 app.use(homeRoutes);
-
-// //?need a fallback route for this application??
-// app.get("*", (req, res) =>
-//   res.send(
-//     `Make a GET request using Insomnia to <a href="http://localhost:${PORT}">http://localhost:${PORT}</a>`
-//   )
-// );
 
 //listen method for incoming conections to PORT
 app.listen(PORT, () => console.log(`Listening at http://localhost:${PORT}`));

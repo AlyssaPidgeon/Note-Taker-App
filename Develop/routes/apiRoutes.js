@@ -36,7 +36,7 @@ router.post("/api/notes", (req, res) => {
 
     //write to the file:
     fs.writeFileSync("./db/db.json", JSON.stringify(currentTodoString));
-    console.log(`New To-Do ${newTodo} has been written to JOSN file`);
+    console.log(`New To-Do ${newTodo} has been written to JSON file`);
 
     //   const response = {
     //     status: "success",
