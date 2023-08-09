@@ -7,7 +7,7 @@ const homeRoutes = require("./routes/homeRoutes");
 const apiRoutes = require("./routes/apiRoutes");
 //specify port for express.js to run on:
 //update for heroku:
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 //middleware to handle data from client side to be parsed through json:
 app.use(express.json());
