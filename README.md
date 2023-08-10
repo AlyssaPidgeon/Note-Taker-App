@@ -7,7 +7,7 @@ The application uses Express.js as the back end and saves and retrieves note dat
 
 ## Installation
 
-The following link will direct you to the deployed web application:
+The following link will direct you to the deployed web application: https://alyssapidgeon.github.io/Note-Taker-App/ 
 
 ## Usage
 
