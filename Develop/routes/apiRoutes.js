@@ -15,7 +15,6 @@ router.post("/api/notes", (req, res) => {
   console.info(`${req.method} request received to add a new note`);
 
   const { title, text } = req.body;
-  console.log({ title, text }, "route hit");
 
   //check request has both titel and text:
   if (title && text) {
@@ -28,9 +27,6 @@ router.post("/api/notes", (req, res) => {
 
     //read current file that new data being ápended'to:
     const currentTodoString = JSON.parse(fs.readFileSync("./db/db.json"));
-    //make new array using spread syntax to merge arrays:
-
-    // const newTodoList = [...currentTodoString, newTodo];
 
     currentTodoString.push(newTodo);
 
@@ -38,12 +34,6 @@ router.post("/api/notes", (req, res) => {
     fs.writeFileSync("./db/db.json", JSON.stringify(currentTodoString));
     console.log(`New To-Do ${newTodo} has been written to JSON file`);
 
-    //   const response = {
-    //     status: "success",
-    //     body: newTodo,
-    //   };
-
-    // console.log(response);
     res.status(201).json(currentTodoString);
   } else {
     res
