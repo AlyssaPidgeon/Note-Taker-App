@@ -12,8 +12,12 @@ The following link will direct you to the deployed web application: https://alys
 ## Usage
 
 Here is an image of the live application front page:
+![image](https://github.com/AlyssaPidgeon/Note-Taker-App/assets/133649814/dc332d9d-a0cd-4096-a798-ff9a2e97c53f)
+
 
 Here is an image of the live application on the task page where the user can enter new tasks:
+![image](https://github.com/AlyssaPidgeon/Note-Taker-App/assets/133649814/aa0f06dd-b699-481e-9ad1-68312ea07928)
+
 
 ## License
 
