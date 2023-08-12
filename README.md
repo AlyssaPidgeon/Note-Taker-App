@@ -7,8 +7,8 @@ The application uses Express.js as the back end and saves and retrieves note dat
 
 ## Installation
 
-The following link will direct you to the deployed web application: https://alyssapidgeon.github.io/Note-Taker-App/ 
-
+The following link will direct you to the deployed web application on GitHub: https://alyssapidgeon.github.io/Note-Taker-App/ 
+The following link will direct you to the deployed web application on Heroku: https://ancient-taiga-96790-201f9b06bca9.herokuapp.com/
 ## Usage
 
 Here is an image of the live application front page:
